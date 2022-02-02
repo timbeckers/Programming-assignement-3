@@ -150,3 +150,7 @@ names(tidyData) <- new_names
 
 #write to a csv file
 data.table::fwrite(x = tidyData, file = "tidyData.csv", quote = FALSE)
+
+#write a txt file
+write.table(tidyData, file="tidyData.txt",row.names = F)
+
